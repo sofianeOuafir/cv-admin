@@ -1,6 +1,6 @@
 <h1> CV - Admin </h1>
 
-<p> I have developed this Grails - groovy applicaion to manage my online resume. <br/>
+<p> I have developed this Grails - groovy application to manage my online resume. <br/>
 Indeed, I have developed an <a href="https://github.com/sofianeOuafir/cv/tree/master"> AngularJs app </a> based on a RESTFUL API which is this Grails back-end application.
 </p>
 <p> This application allow me to manage my work experiences, everything related to my diplomas, my interests, professional skills and finally, allow me to manage the description of myself.</p>
