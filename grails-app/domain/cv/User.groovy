@@ -8,7 +8,7 @@ class User {
     String email
     String github
     String jobDescription
-    static hasMany = [workExperiences: WorkExperience, educations: Education, professionalSkills: ProfessionalSkill, interests: Interest]
+    static hasMany = [workExperiences: WorkExperience, educations: Education, professionalSkills: ProfessionalSkill, interests: Interest, personalProjects: PersonalProject]
 
 
     static constraints = {

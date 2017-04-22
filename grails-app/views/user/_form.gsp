@@ -92,6 +92,24 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'personalProjects', 'error')} ">
+	<label for="personalProjects">
+		<g:message code="user.personalProjects.label" default="Personal Projects" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${userInstance?.personalProjects?}" var="p">
+    <li><g:link controller="personalProject" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="personalProject" action="create" params="['user.id': userInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'personalProject.label', default: 'PersonalProject')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'phoneNumber', 'error')} required">
 	<label for="phoneNumber">
 		<g:message code="user.phoneNumber.label" default="Phone Number" />

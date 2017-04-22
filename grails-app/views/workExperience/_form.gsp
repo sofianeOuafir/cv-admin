@@ -56,3 +56,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: workExperienceInstance, field: 'website', 'error')} required">
+	<label for="website">
+		<g:message code="workExperience.website.label" default="Website" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="website" required="" value="${workExperienceInstance?.website}"/>
+
+</div>
+

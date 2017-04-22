@@ -128,6 +128,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         '/professionalSkill/**':     ['ROLE_ADMIN'],
         '/user/**':                  ['ROLE_ADMIN'],
         '/workExperience/**':        ['ROLE_ADMIN'],
+        '/personalProject/**':       ['ROLE_ADMIN'],
         '/index':                    ['ROLE_ADMIN'],
         '/index.gsp':                ['ROLE_ADMIN'],
         '/assets/**':                ['ROLE_ADMIN'],

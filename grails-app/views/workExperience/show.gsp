@@ -77,6 +77,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${workExperienceInstance?.website}">
+				<li class="fieldcontain">
+					<span id="website-label" class="property-label"><g:message code="workExperience.website.label" default="Website" /></span>
+					
+						<span class="property-value" aria-labelledby="website-label"><g:fieldValue bean="${workExperienceInstance}" field="website"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:workExperienceInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

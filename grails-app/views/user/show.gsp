@@ -99,6 +99,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${userInstance?.personalProjects}">
+				<li class="fieldcontain">
+					<span id="personalProjects-label" class="property-label"><g:message code="user.personalProjects.label" default="Personal Projects" /></span>
+					
+						<g:each in="${userInstance.personalProjects}" var="p">
+						<span class="property-value" aria-labelledby="personalProjects-label"><g:link controller="personalProject" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${userInstance?.phoneNumber}">
 				<li class="fieldcontain">
 					<span id="phoneNumber-label" class="property-label"><g:message code="user.phoneNumber.label" default="Phone Number" /></span>
