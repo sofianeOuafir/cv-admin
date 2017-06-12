@@ -12,7 +12,19 @@ This project is related to the portfolio web app written in angularJS. Indeed, t
   <li>the description of myself.</li>
 </ul>
 
-
-
+<br>
+<br>
+<img src="https://github.com/sofianeOuafir/portfolio-admin/blob/master/1.PNG?raw=true">
+<br>
+<br>
+<img src="https://github.com/sofianeOuafir/portfolio-admin/blob/master/2.PNG?raw=true">
+<br>
+<br>
+<img src="https://github.com/sofianeOuafir/portfolio-admin/blob/master/3.PNG?raw=true">
+<br>
+<br>
+<img src="https://github.com/sofianeOuafir/portfolio-admin/blob/master/4.PNG?raw=true">
+<br>
+<br>
 
 
