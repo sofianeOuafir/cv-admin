@@ -68,6 +68,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${workExperienceInstance?.tasks}">
+				<li class="fieldcontain">
+					<span id="tasks-label" class="property-label"><g:message code="workExperience.tasks.label" default="Tasks" /></span>
+					
+						<g:each in="${workExperienceInstance.tasks}" var="t">
+						<span class="property-value" aria-labelledby="tasks-label"><g:link controller="task" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${workExperienceInstance?.user}">
 				<li class="fieldcontain">
 					<span id="user-label" class="property-label"><g:message code="workExperience.user.label" default="User" /></span>

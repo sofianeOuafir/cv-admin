@@ -47,6 +47,24 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: workExperienceInstance, field: 'tasks', 'error')} ">
+	<label for="tasks">
+		<g:message code="workExperience.tasks.label" default="Tasks" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${workExperienceInstance?.tasks?}" var="t">
+    <li><g:link controller="task" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="task" action="create" params="['workExperience.id': workExperienceInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'task.label', default: 'Task')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: workExperienceInstance, field: 'user', 'error')} required">
 	<label for="user">
 		<g:message code="workExperience.user.label" default="User" />

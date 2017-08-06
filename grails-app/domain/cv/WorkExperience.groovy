@@ -8,6 +8,7 @@ class WorkExperience {
     String description
     String place
     User user
+    static hasMany = [tasks: Task]
 
     static constraints = {
         title blank: false, nullable: false
